@@ -1,0 +1,19 @@
+.{
+    .name = .winrt_test,
+    .fingerprint = 0x6a82043e3aa3018b,
+    .version = "0.0.0",
+    .zig_version = "0.17.1",
+    .minimum_zig_version = "0.17.0",
+    .dependencies = .{
+        .winrt = .{ .path = ".." },
+        .zipcmdline = .{
+            .url = "git+https://github.com/marler8997/zipcmdline#91c3e14fb36347d7ef952b8ab74e95caa246b772",
+            .hash = "zipcmdline-0.0.0-DFii0-7PAAAXtEEiGPMCElsh9ADun8-EedbgyGKyUfCe",
+        },
+        .win32 = .{
+            .url = "git+https://github.com/marlersoft/zigwin32#fb2645891520f3e99931db17a7eba04057e87e89",
+            .hash = "win32-42.0.39-preview-mX5pFc794wMcrMyFgsO1c4csBdowhpiqqwIyN_xjqI5z",
+        },
+    },
+    .paths = .{ "build.zig", "build.zig.zon", "capture.zig" },
+}
